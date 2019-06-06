@@ -1,0 +1,11 @@
+.map {
+    height: 100vh;
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    background-position: top;
+
+    animation-name: zoomInMap;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
