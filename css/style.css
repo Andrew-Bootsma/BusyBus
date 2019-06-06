@@ -1,3 +1,9 @@
+@keyframes zoomInMap {
+  from {
+    transform: scale(1) translate(0); }
+  to {
+    transform: scale(2) translate(8.7rem, -4rem); } }
+
 *,
 *::after,
 *::before {
@@ -10,3 +16,96 @@ html {
 
 body {
   box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  color: #2c2f30; }
+
+h2 {
+  font-weight: 700; }
+
+.map {
+  height: 100vh;
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-position: top;
+  animation-name: zoomInMap;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s; }
+
+.stops {
+  width: 100%;
+  position: absolute;
+  z-index: 1001;
+  top: 25rem; }
+  .stops__header {
+    background-color: #d9d9d9;
+    font-size: 1.8rem;
+    padding: 1.6rem 1.5rem .5rem 1.5rem;
+    text-align: center;
+    color: #6d2c35;
+    line-height: 2.1rem;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    text-transform: uppercase; }
+  .stops__left {
+    float: left; }
+  .stops__right {
+    float: right; }
+  .stops__line {
+    float: left;
+    color: #2c2f30;
+    font-weight: 700; }
+  .stops__dest {
+    color: #264650;
+    font-weight: 300; }
+  .stops__arr {
+    float: right;
+    color: #2c2f30; }
+  .stops__list {
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.82);
+    box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2.71828rem);
+    font-size: 2.4rem; }
+    .stops__list a:link,
+    .stops__list a:visited {
+      text-decoration: none; }
+  .stops__item {
+    height: 7rem;
+    padding: 2rem 1.5rem;
+    border-bottom: 0.5px solid #2c2f30; }
+
+.navigation {
+  width: 100%;
+  background-color: rgba(248, 248, 248, 0.82);
+  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2.71828rem);
+  position: relative;
+  z-index: 1000; }
+  .navigation__topbar {
+    display: block; }
+  .navigation__topimage {
+    width: 100%; }
+  .navigation__backarrow {
+    padding-top: 1rem;
+    width: 18rem;
+    height: 4.4rem;
+    display: block;
+    position: relative; }
+  .navigation__arrow {
+    width: 1.2rem;
+    float: left;
+    margin-left: .9rem; }
+  .navigation__backto {
+    font-size: 1.7rem;
+    float: left;
+    margin-left: .6rem; }
+  .navigation__title {
+    font-size: 3.4rem;
+    color: #264650;
+    margin-left: 1.4rem;
+    height: 4rem; }
