@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
         
@@ -26,59 +24,107 @@
         </div>
 
         <main>
+            <div class="description">
+                Bus <span class="description__heavy">37</span> - <span class="description__heavy">5</span>m
+            </div>
+
             <section class="section-map">
                 <div class="map">
                 </div>
             </section>
 
-            <div class="stops">
-                <div class="stops__header">
-                    <span class="stops__left">Bus line</span>
-                    Destination
-                    <span class="stops__right">Arrival</span>
+            <section class="section-stops">
+                <div class="stops">
+                    <div class="stops__header">
+                        <span class="stops__left">Bus line</span>
+                        <span class=>Destination</span>
+                        <span class="stops__right">Arrival</span>
+                    </div>
+                    <ul class="stops__list" id="stops-list">
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">60 E</span>
+                            <span class="stops__dest">Randolph/Har...</span>
+                            <span class="stops__arr">1 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">J14 S</span>
+                            <span class="stops__dest">103rd/Stony I...</span>
+                            <span class="stops__arr">2 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">124 E</span>
+                            <span class="stops__dest">Navy Pier</span>
+                            <span class="stops__arr">4 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">151 N</span>
+                            <span class="stops__dest">Devon/Clark</span>
+                            <span class="stops__arr">6 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">124 S</span>
+                            <span class="stops__dest">Navy Pier</span>
+                            <span class="stops__arr">9 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">124 E</span>
+                            <span class="stops__dest">Navy Pier</span>
+                            <span class="stops__arr">14 min</span>
+                        </a></li>
+                        <li class="stops__item"><a href="#" class="stops__link">
+                            <span class="stops__line">J14 S</span>
+                            <span class="stops__dest">103rd/Stony I...</span>
+                            <span class="stops__arr">17 min</span>
+                        </a></li>
+                    </ul>
                 </div>
-                <ul class="stops__list">
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">60 E</span>
-                        <span class="stops__dest">Randolph/Har...</span>
-                        <span class="stops__arr">1 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">J14 S</span>
-                        <span class="stops__dest">103rd/Stony I...</span>
-                        <span class="stops__arr">2 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">124 E</span>
-                        <span class="stops__dest">Navy Pier</span>
-                        <span class="stops__arr">4 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">151 N</span>
-                        <span class="stops__dest">Devon/Clark</span>
-                        <span class="stops__arr">6 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">124 S</span>
-                        <span class="stops__dest">Navy Pier</span>
-                        <span class="stops__arr">9 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">124 E</span>
-                        <span class="stops__dest">Navy Pier</span>
-                        <span class="stops__arr">14 min</span>
-                    </a></li>
-                    <li class="stops__item"><a href="#" class="stops__link">
-                        <span class="stops__line">J14 S</span>
-                        <span class="stops__dest">103rd/Stony I...</span>
-                        <span class="stops__arr">17 min</span>
-                    </a></li>
-                </ul>
-            </div>
+            </section>
+
+            <section class="section-reroute">
+                <div class="reroute">
+                    <div class="reroute__header" id="reroute-header">
+                        <span class="reroute__left">+ Reroute</span>
+                    </div>
+                    <ul class="reroute__list display-none" id="reroute-list">
+                        <li class="reroute__item"><a href="#" class="reroute__link">
+                            <span class="reroute__line">6x</span>
+                            <span class="reroute__dest">Jackson Park ...</span>
+                            <span class="reroute__arr">N/A</span>
+                        </a></li>
+                        <li class="reroute__after"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-out-of-order">
+                <div class="out-of-order">
+                    <div class="out-of-order__header" id="out-of-order-header">
+                        <span class="out-of-order__left">+ Out of order</span>
+                    </div>
+                    <ul class="out-of-order__list display-none" id="out-of-order-list">
+                        <li class="out-of-order__item"><a href="#" class="out-of-order__link">
+                            <span class="out-of-order__line">4</span>
+                            <span class="out-of-order__dest">Cottage Grove</span>
+                            <span class="out-of-order__resume">12:10am</span>
+                        </a></li>
+                        <li class="out-of-order__item"><a href="#" class="out-of-order__link">
+                            <span class="out-of-order__line">20</span>
+                            <span class="out-of-order__dest">Madison</span>
+                            <span class="out-of-order__resume">12:10am</span>
+                        </a></li>
+                        <li class="out-of-order__item"><a href="#" class="out-of-order__link">
+                            <span class="out-of-order__line">157</span>
+                            <span class="out-of-order__dest">Streeterville/T...</span>
+                            <span class="out-of-order__resume">6:10am</span>
+                        </a></li>
+                        <li class="out-of-order__after"></li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
 
-
+        <script src="app.js"></script>
     </body>
 
 </html>

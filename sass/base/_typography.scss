@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "SF Display", sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
     color: $color-light-black;
@@ -7,4 +7,32 @@ body {
 
 h2 {
     font-weight: 700;
+}
+
+/** Regular */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 400;
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Light */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 200;
+    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Bold */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+  /** Heavy */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 800;
+    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
 }

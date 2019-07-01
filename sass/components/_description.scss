@@ -1,0 +1,17 @@
+.description {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 14rem;
+    left: 14.5rem;
+    z-index: 100;
+    opacity: 0;
+
+    animation-name: fadeInClimb;
+    animation-duration: .5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    &__heavy {
+        font-weight: 900;
+    }
+}
