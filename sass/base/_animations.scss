@@ -1,3 +1,17 @@
+@keyframes zoomInList {
+    0% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-60.2rem);
+    }
+
+    100% {
+        transform: translateY(-56.2rem);
+    }
+}
+
 @keyframes zoomInMap {
     from {
         transform: scale(1) translate(0);
@@ -5,5 +19,27 @@
 
     to {
         transform: scale(2) translate(8.7rem, -4rem);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes fadeInClimb {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateY(0);
     }
 }

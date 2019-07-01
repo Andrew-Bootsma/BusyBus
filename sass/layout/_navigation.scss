@@ -1,10 +1,10 @@
 .navigation {
     width: 100%;
-    background-color: rgba($color-nav-grey, .82);
+    background-color: rgba($color-nav-grey, .95);
     box-shadow: 0 0.5px 0 rgba($color-black, .3);
-    backdrop-filter: blur(2.71828rem);
     position: relative;
     z-index: 1000;
+    height: 11.6rem;
   
 
     &__topbar {

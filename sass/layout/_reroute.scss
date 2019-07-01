@@ -1,32 +1,28 @@
-.stops {
+.reroute {
     width: 100%;
     position: absolute;
-    top: 81.2rem;
-    z-index: 1001;
+    bottom: 3.8rem;
+    z-index: 1002;
+    opacity: 0;
 
-    animation-name: zoomInList;
-    animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: .5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 
     &__header {
         background-color: $color-primary-grey;
         font-size: 1.8rem;
-        padding: 1.6rem 1.5rem .5rem 1.5rem;
+        padding: .9rem 1.5rem .8rem 1.5rem;
         text-align: center;
         color: $color-dark-maroon;
         line-height: 2.1rem;
-        border-radius: 1rem 1rem 0 0;
         overflow: hidden;
         text-transform: uppercase;
     }
 
     &__left {
         float: left;
-    }
-
-    &__right {
-        float: right;
     }
 
     &__line {
@@ -62,11 +58,12 @@
     }
 
     &__list {
-        position: relative;
+        text-align: center;
         background-color: $color-primary-grey-light;
         box-shadow: 0 0.5px 0 rgba($color-black, .3);
         font-size: 2.4rem;
         list-style: none;
+        position: relative;
 
         a:link,
         a:visited {
@@ -79,4 +76,10 @@
         padding: 2rem 1.5rem;
         border-bottom: 0.5px solid $color-light-black;
     }
+
+    &__after {
+        content: "";
+        height: 37.3rem;
+    }
+
 }
