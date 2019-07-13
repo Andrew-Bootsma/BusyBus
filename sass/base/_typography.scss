@@ -13,26 +13,26 @@ h2 {
 @font-face {
     font-family: "SF Display";
     font-weight: 400;
-    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf"), local(".SFNSText"), local(".HelveticaNeueDeskInterface"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto"), local("DroidSans"), local("Tahoma");
 }
 
 /** Light */
 @font-face {
     font-family: "SF Display";
     font-weight: 200;
-    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 /** Bold */
 @font-face {
     font-family: "SF Display";
     font-weight: 700;
-    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Ubuntu Bold"), local("Segoe UI Bold"), local("Roboto-Bold"), local("DroidSans"), local("Tahoma");
 }
 
   /** Heavy */
 @font-face {
     font-family: "SF Display";
     font-weight: 800;
-    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf"), local(".SFNSText-Heavy"), local(".HelveticaNeueDeskInterface-Heavy"), local(".LucidaGrandeUI"), local("Ubuntu Heavy"), local("Segoe UI Heavy"), local("Roboto-Heavy"), local("DroidSans"), local("Tahoma");
 }

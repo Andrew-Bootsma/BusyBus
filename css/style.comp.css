@@ -54,25 +54,25 @@ h2 {
 @font-face {
   font-family: "SF Display";
   font-weight: 400;
-  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf"); }
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf"), local(".SFNSText"), local(".HelveticaNeueDeskInterface"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto"), local("DroidSans"), local("Tahoma"); }
 
 /** Light */
 @font-face {
   font-family: "SF Display";
   font-weight: 200;
-  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf"); }
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
 
 /** Bold */
 @font-face {
   font-family: "SF Display";
   font-weight: 700;
-  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"); }
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Ubuntu Bold"), local("Segoe UI Bold"), local("Roboto-Bold"), local("DroidSans"), local("Tahoma"); }
 
 /** Heavy */
 @font-face {
   font-family: "SF Display";
   font-weight: 800;
-  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf"); }
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf"), local(".SFNSText-Heavy"), local(".HelveticaNeueDeskInterface-Heavy"), local(".LucidaGrandeUI"), local("Ubuntu Heavy"), local("Segoe UI Heavy"), local("Roboto-Heavy"), local("DroidSans"), local("Tahoma"); }
 
 .display-none {
   display: none; }
@@ -168,7 +168,7 @@ h2 {
     color: #264650;
     font-weight: 300;
     position: absolute;
-    left: 10.8rem; }
+    left: 27%; }
   .out-of-order__resume {
     float: right;
     margin-right: 1.5rem;
@@ -183,13 +183,13 @@ h2 {
     position: absolute;
     display: inline-block;
     margin-top: .7rem;
-    right: 1.5rem; }
+    right: 4%; }
   .out-of-order__resume::before {
     content: "resumes";
     font-size: 1.2rem;
     font-weight: 700;
     position: absolute;
-    margin-top: -1.2rem; }
+    margin-top: -4%; }
   .out-of-order__list {
     text-align: center;
     background-color: #e6e6e6;
@@ -236,7 +236,7 @@ h2 {
     color: #264650;
     font-weight: 300;
     position: absolute;
-    left: 10.8rem; }
+    left: 27%; }
   .reroute__arr {
     float: right;
     margin-right: 1.5rem;
@@ -251,7 +251,7 @@ h2 {
     position: absolute;
     display: inline-block;
     margin-top: .7rem;
-    right: 1.5rem; }
+    right: 4%; }
   .reroute__list {
     text-align: center;
     background-color: #e6e6e6;
@@ -273,7 +273,7 @@ h2 {
 .stops {
   width: 100%;
   position: absolute;
-  top: 81.2rem;
+  top: 100%;
   z-index: 1001;
   animation-name: zoomInList;
   animation-duration: 1s;
@@ -301,7 +301,7 @@ h2 {
     color: #264650;
     font-weight: 300;
     position: absolute;
-    left: 10.8rem; }
+    left: 27%; }
   .stops__arr {
     float: right;
     margin-right: 1.5rem;
@@ -316,7 +316,31 @@ h2 {
     position: absolute;
     display: inline-block;
     margin-top: .7rem;
-    right: 1.5rem; }
+    right: 4%; }
+  .stops__60e::before {
+    content: "every 20 min";
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -4%; }
+  .stops__124e::before, .stops__124s::before {
+    content: "every 10 min";
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -4%; }
+  .stops__151n::before {
+    content: "every 16 min";
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -4%; }
+  .stops__j14s::before {
+    content: "every 15 min";
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -4%; }
   .stops__list {
     position: relative;
     background-color: #e6e6e6;

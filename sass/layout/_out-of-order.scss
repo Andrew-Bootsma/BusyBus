@@ -2,7 +2,7 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    z-index: 1003;
+    z-index: 1003; 
     opacity: 0;
 
     animation-name: fadeIn;
@@ -35,7 +35,7 @@
         color: $color-dark-navy;
         font-weight: 300;
         position: absolute;
-        left: 10.8rem;
+        left: 27%;
     }
 
     &__resume {
@@ -54,7 +54,7 @@
         position: absolute;
         display: inline-block;
         margin-top: .7rem;
-        right: 1.5rem;
+        right: 4%;
     }
 
     &__resume::before {
@@ -62,7 +62,7 @@
         font-size: 1.2rem;
         font-weight: 700;
         position: absolute;
-        margin-top: -1.2rem;
+        margin-top: -4%;
     }
 
     &__list {
