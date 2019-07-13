@@ -1,7 +1,7 @@
 .stops {
     width: 100%;
     position: absolute;
-    top: 81.2rem;
+    top: 100%;
     z-index: 1001;
 
     animation-name: zoomInList;
@@ -39,7 +39,7 @@
         color: $color-dark-navy;
         font-weight: 300;
         position: absolute;
-        left: 10.8rem;
+        left: 27%;
     }
 
     &__arr {
@@ -58,7 +58,39 @@
         position: absolute;
         display: inline-block;
         margin-top: .7rem;
-        right: 1.5rem;
+        right: 4%;
+    }
+
+    &__60e::before {
+        content: "every 20 min";
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        margin-top: -4%;
+    }
+
+    &__124e::before, &__124s::before {
+        content: "every 10 min";
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        margin-top: -4%;
+    }
+
+    &__151n::before {
+        content: "every 16 min";
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        margin-top: -4%;
+    }
+
+    &__j14s::before {
+        content: "every 15 min";
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        margin-top: -4%;
     }
 
     &__list {
