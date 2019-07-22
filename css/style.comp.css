@@ -299,7 +299,7 @@ h2 {
   .stops__dest {
     color: #264650;
     font-weight: 300;
-    left: 27%; }
+    margin-left: 10%; }
   .stops__arr {
     float: right;
     margin-right: 1.5rem;
